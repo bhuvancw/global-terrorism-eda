@@ -23,25 +23,5 @@ Key findings (brief)
 - Bombing/Explosion is the dominant attack type worldwide (by a large margin), with regional tactical variation: the Middle East & North Africa shows extreme bombing concentration; South Asia has a more balanced mix (bombings + armed assault); Sub-Saharan Africa shows relatively more hostage-taking incidents.
 - Geographic concentration is clear: the Middle East, South Asia, and parts of Sub-Saharan Africa show the highest incident densities in the 2000–2017 window.
 
-How to run
-
-1. Clone or open the repository.
-2. (Recommended) Create and activate a virtual environment:
-   - python -m venv .venv
-   - .\.venv\Scripts\Activate
-3. Install required packages (example):
-   - pip install pandas numpy matplotlib seaborn plotly jupyter folium
-4. Ensure the dataset archive is in `extracted_data/datasets/` (or update the notebook paths), then launch the notebook:
-   - jupyter notebook global_terrorism_eda.ipynb
-
-Notes and recommendations
-
-- The GTD file is large; do not commit the raw dataset to Git. Add large data files to `.gitignore` and consider Git LFS or an external data hosting solution if you need to track large binaries.
-- Re-running heavy cells (full dataset loads, large aggregations, or mapping all points) may be slow on machines with limited memory; use sampling where appropriate (the notebook uses sampling for interactive maps).
-- If desired, add a `requirements.txt` (pip freeze > requirements.txt) to pin package versions.
-
-License & contact
-- Add a license file if needed (e.g., MIT).
-- For questions or suggestions, contact the repository owner.
 
 View on GitHub: https://github.com/bhuvancw/global-terrorism-eda/blob/main/global_terrorism_eda.ipynb
